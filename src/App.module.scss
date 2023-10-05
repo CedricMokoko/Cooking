@@ -1,0 +1,5 @@
+/* On utilise le camelCase ici car on va passer cette propriété en utilisant 
+l'objet ${styles.appContainer} cosi -> className={`d-flex flex-column ${styles.appContainer}`} */
+.appContainer {
+  min-height: 150vh;
+}

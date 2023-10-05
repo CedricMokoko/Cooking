@@ -1,0 +1,26 @@
+.header {
+  z-index: 1;
+  position: sticky;
+  top: 0;
+  padding: 10px 20px;
+  height: 100px;
+  background-color: var(--primary);
+  box-shadow: var(--box-shadow-nav);
+  img {
+    border-radius: 50%;
+    height: 160px;
+    transform: translateY(30%);
+  }
+  .iconMenu {
+    font-size: 1.3rem;
+    margin-right: 20px;
+    color: var(--gray-1);
+  }
+  ul {
+    border-left: 2px solid;
+    padding-left: 20px;
+    button {
+      font-size: 1rem;
+    }
+  }
+}

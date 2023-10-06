@@ -1,5 +1,24 @@
+@use "../assets/styles/mixins_media_queries" as mixin;
+
 .footer {
   background-color: var(--gray-1);
   color: var(--gray-2);
   min-height: 200px;
+  @include mixin.lg-lt {
+    min-height: 180px;
+  }
+  @include mixin.xs {
+    min-height: 160px;
+  }
+  p {
+    text-align: center;
+    transition: 0.6s;
+    font-size: 0.9rem;
+    @include mixin.md-lt {
+      font-size: 0.8rem;
+    }
+    @include mixin.xs {
+      font-size: 0.7rem;
+    }
+  }
 }

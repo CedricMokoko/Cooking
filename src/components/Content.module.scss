@@ -1,11 +1,40 @@
-.grid {
-  display: grid;
-  place-content: center;
-  grid-template-columns: repeat(3, 220px);
-  grid-auto-columns: repeat(3, 220px);
-  gap: 20px;
+@use "../assets/styles/mixins_media_queries" as mixin;
+
+.ContainerXs {
+  @include mixin.xs {
+    background-color: white;
+  }
+  .CategoriaTitle {
+    font-size: 1.5rem;
+    @include mixin.lg-lt {
+      font-size: 1.4rem;
+    }
+    @include mixin.xs {
+      text-align: center;
+      font-size: 1.3rem;
+    }
+  }
 }
 
 .contentCard {
   width: 730px;
+  width: 100%;
+  @include mixin.xs {
+    padding: 20px 0;
+  }
+  .grid {
+    display: grid;
+    place-content: center;
+    grid-template-columns: repeat(3, 220px);
+    grid-auto-columns: repeat(3, 220px);
+    gap: 20px;
+    @include mixin.lg-lt {
+      grid-template-columns: repeat(2, 220px);
+      grid-auto-columns: repeat(2, 220px);
+    }
+    @include mixin.xs {
+      grid-template-columns: 270px;
+      grid-auto-columns: 270px;
+    }
+  }
 }

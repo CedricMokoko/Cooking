@@ -1,3 +1,14 @@
+@use "./mixins_media_queries" as mixin;
+
+html {
+  @include mixin.lg-lt {
+    font-size: 87.5%;
+  }
+  @include mixin.md-lt {
+    font-size: 81.25%;
+  }
+}
+
 body {
   margin: 0;
   font-family: var(--font-family);
@@ -28,4 +39,12 @@ ul {
 
 img {
   max-width: 100%;
+}
+
+::placeholder {
+  font-family: var(--font-family);
+}
+
+button {
+  font-family: var(--font-family);
 }

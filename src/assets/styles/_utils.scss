@@ -1,3 +1,5 @@
+@use "./mixins_media_queries" as mixin;
+
 .p-5 {
   padding: 5px;
 }
@@ -52,7 +54,21 @@
 }
 
 .container {
+  min-width: 280px;
   max-width: 800px;
   margin: auto;
+  @include mixin.xs {
+    padding: 0;
+    width: 100%;
+  }
+}
+
+.calc {
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
+  height: 100vh;
+  background-color: var(--gray-1);
+  opacity: 0.4;
 }

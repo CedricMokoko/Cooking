@@ -1,5 +1,5 @@
 .btn {
-  font-weight: bold;
+  font-weight: 500;
   padding: 5px 10px;
   border-radius: 10px;
   cursor: pointer;
@@ -17,10 +17,14 @@
 
 .btn-primary-reverse {
   background-color: white;
-  border: 1px solid var(----gray-1);
+  border: 1px solid white;
   color: var(--gray-1);
 }
 
 .card {
   background-color: white;
+}
+
+.text-primary {
+  color: var(--primary);
 }

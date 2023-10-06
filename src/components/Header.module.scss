@@ -34,13 +34,13 @@
     }
   }
   .iconMenu {
-    display: none;
+    display: none !important;
     font-size: 1.3rem;
     margin-right: 20px;
     color: var(--gray-1);
     cursor: pointer;
     @include mixin.xs {
-      display: block;
+      display: block !important;
       font-size: 1.3rem;
       margin: 0 0 0 5px;
       max-width: 25%;

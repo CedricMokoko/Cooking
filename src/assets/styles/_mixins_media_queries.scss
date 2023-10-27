@@ -11,6 +11,12 @@
     @content;
   }
 }
+/*Tout ce qui se trouve en dessous aura ses règles*/
+@mixin sm-lt {
+  @media (max-width: 767px) {
+    @content;
+  }
+}
 
 /*Portrait tablet to landscape and desktop*/
 @mixin md {

@@ -1,4 +1,4 @@
-@use "../assets/styles/mixins_media_queries" as mixin;
+@use "../../assets/styles/mixins_media_queries" as mixin;
 
 .ContainerXs {
   @include mixin.xs {
@@ -37,4 +37,9 @@
       grid-auto-columns: 270px;
     }
   }
+}
+
+.small {
+  font-size: 14px;
+  font-weight: 500;
 }
